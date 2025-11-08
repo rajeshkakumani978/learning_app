@@ -3,7 +3,8 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - mvn clean install
+      - echo Building the project with Gradle...
+      - ./gradlew clean build
       - echo Logging in to Amazon ECR...
       - aws --version
       - REPOSITORY_URI=693422064985.dkr.ecr.us-east-2.amazonaws.com/learning-app
