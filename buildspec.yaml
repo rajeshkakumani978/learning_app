@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - echo Building the project with Gradle...
-      - bash ./gradlew clean build
+      - bash ./gradlew clean bootJar
       - echo Logging in to Amazon ECR...
       - aws --version
       - REPOSITORY_URI=693422064985.dkr.ecr.us-east-2.amazonaws.com/learning-app
