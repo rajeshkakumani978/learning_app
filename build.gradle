@@ -51,3 +51,8 @@ dependencyManagement {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+bootJar {
+	archiveFileName = "app.jar"
+	destinationDirectory = file("$rootDir/target")
+}
